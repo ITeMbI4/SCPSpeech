@@ -1,2 +1,2 @@
-# SCP-Speech
-Allow certain SCP speek with other classes. 
+# SCP Speech
+Allow certain SCP speak with other classes. 
