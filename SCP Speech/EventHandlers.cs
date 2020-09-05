@@ -23,7 +23,7 @@ namespace SCP_Speech
 
         public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
         {
-            if (!plugin.GetConfigBool("ss_enabled"))
+            if (!plugin.GetConfigBool("sp_enabled"))
             {
                 plugin.PluginManager.DisablePlugin(plugin);
             }
