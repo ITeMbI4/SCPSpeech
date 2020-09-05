@@ -40,18 +40,18 @@ namespace SCP_Speech
         public override void Register()
         {
             this.AddEventHandlers(new EventHandlers(this));
-            this.AddConfig(new Smod2.Config.ConfigSetting("ss_enabled", true, true, "no description"));
-            this.AddConfig(new Smod2.Config.ConfigSetting("ss_049", true, true, "no description"));
-            this.AddConfig(new Smod2.Config.ConfigSetting("ss_0492", true, true, "no description"));
-            this.AddConfig(new Smod2.Config.ConfigSetting("ss_096", true, true, "no description"));
-            this.AddConfig(new Smod2.Config.ConfigSetting("ss_106", true, true, "no description"));
-            this.AddConfig(new Smod2.Config.ConfigSetting("ss_173", true, true, "no description"));
-            s049 = this.GetConfigBool("ss_049");
-            enabled = this.GetConfigBool("ss_enabled");
-            s0492 = this.GetConfigBool("ss_0492");
-            s096 = this.GetConfigBool("ss_096");
-            s173 = this.GetConfigBool("ss_173");
-            s106 = this.GetConfigBool("ss_106");
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_enabled", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_049", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_0492", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_096", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_106", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_173", true, true, "no description"));
+            s049 = this.GetConfigBool("sp_049");
+            enabled = this.GetConfigBool("sp_enabled");
+            s0492 = this.GetConfigBool("sp_0492");
+            s096 = this.GetConfigBool("sp_096");
+            s173 = this.GetConfigBool("sp_173");
+            s106 = this.GetConfigBool("sp_106");
         }
     }
 }
