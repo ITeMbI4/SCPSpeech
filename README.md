@@ -16,4 +16,3 @@ Put SCPSpeech.dll under the release tab into sm_plugins folder and 0Harmony.dll 
 | sp_096         | 	Boolean   |    false      | Can SCP-096 speak?        |
 | sp_106         | 	Boolean   |    false      | Can SCP-106 speak?        |
 | sp_173         | 	Boolean   |    false      | Can SCP-173 speak?        |
-| sp_106         | 	Boolean   |    false      | Can SCP-196 speak?        |
