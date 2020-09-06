@@ -1,7 +1,7 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCPSpeech", "SCPSpeech.csproj", "{3F58D94A-0EB7-4316-9CD2-3A55AA8800AC}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7D7C63EF-A1D5-41D5-8A6B-348769CD1BE1}
+		SolutionGuid = {1245508D-E82B-49A6-BD88-907BB6767783}
 	EndGlobalSection
 EndGlobal
