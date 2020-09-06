@@ -1,4 +1,4 @@
-﻿using Assets._Scripts.Dissonance;
+using Assets._Scripts.Dissonance;
 using HarmonyLib;
 
 namespace SCP_Speech
@@ -8,10 +8,11 @@ namespace SCP_Speech
     {
         public static bool Prefix(DissonanceUserSetup __instance, bool value)
         {
-            if (SCPSpeech.enabled)
+            if (SCPSpeech.Enabled)
             {
                 CharacterClassManager ccm = __instance.gameObject.GetComponent<CharacterClassManager>();
-                if (ccm.CurClass.Is939() || ccm.CurClass == RoleType.Scp049 && SCPSpeech.s049 || ccm.CurClass == RoleType.Scp0492 && SCPSpeech.s0492 || ccm.CurClass == RoleType.Scp079 && SCPSpeech.enabled || ccm.CurClass == RoleType.Scp096 && SCPSpeech.s096 || ccm.CurClass == RoleType.Scp106 && SCPSpeech.s106 || ccm.CurClass == RoleType.Scp173 && SCPSpeech.s173)
+                if (ccm.CurClass.Is939() || ccm.CurClass == RoleType.Scp049 && SCPSpeech.s049 || ccm.CurClass == RoleType.Scp0492 && SCPSpeech.s0492 || ccm.CurClass == RoleType.Scp079 && SCPSpeech.Enabled || 
+                    ccm.CurClass == RoleType.Scp096 && SCPSpeech.s096 || ccm.CurClass == RoleType.Scp106 && SCPSpeech.s106 || ccm.CurClass == RoleType.Scp173 && SCPSpeech.s173)
                 {
                     __instance.MimicAs939 = value;
                 }
