@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using HarmonyLib;
 using UnityEngine;
 
@@ -10,6 +10,9 @@ namespace SCP_Speech
 	{
 		public static void Postfix(Intercom __instance, ref bool __result)
 		{
+			if (!SCPSpeech.s939I)
+				return;
+
 			CharacterClassManager ccm = __instance.GetComponent<CharacterClassManager>();
 
 			if (!ccm.CurClass.Is939())
