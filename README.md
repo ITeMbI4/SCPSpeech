@@ -1,7 +1,7 @@
 # SCP Speech
 Allow certain SCP speak with other classes. 
 
-This plugin allow SCP-049 and other SCPs (exept SCP-939) to speak with humans and also allow SCP-939 to use Intercom.
+This plugin allow SCP-049 and other SCPs (exept SCP-939) speak with humans and also allow SCP-939 to use Intercom.
 
 ## Install Instructions
 Put SCPSpeech.dll under the release tab into sm_plugins folder and 0Harmony.dll into sm_plugins\dependencies folder.
