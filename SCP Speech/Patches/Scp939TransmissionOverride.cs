@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using UnityEngine;
 
 namespace SCP_Speech
@@ -9,6 +9,9 @@ namespace SCP_Speech
 	{
 		public static bool Prefix(Intercom __instance, GameObject spk)
 		{
+			if (!SCPSpeech.s939I)
+				return false;
+
 			if (spk != null)
 				return true;
 
