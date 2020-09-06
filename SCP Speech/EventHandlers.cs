@@ -1,4 +1,4 @@
-﻿using Smod2;
+using Smod2;
 using Smod2.Events;
 using Smod2.EventHandlers;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace SCP_Speech
     public class EventHandlers : IEventHandlerWaitingForPlayers, IEventHandlerRoundStart
     {
         private readonly Plugin plugin;
-        private static Transform intercomeArea = null;
+        private static Transform intercomeArea;
         private static readonly Dictionary<GameObject, ReferenceHub> _hubs = new Dictionary<GameObject, ReferenceHub>();
 		public List<CoroutineHandle> Coroutines = new List<CoroutineHandle>();
 
@@ -23,7 +23,7 @@ namespace SCP_Speech
 
         public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
         {
-            if (!plugin.GetConfigBool("sp_enabled"))
+            if (SCPSpeech.Enabled)
             {
                 plugin.PluginManager.DisablePlugin(plugin);
             }
@@ -31,8 +31,11 @@ namespace SCP_Speech
 
 		public void OnRoundStart(RoundStartEvent ev)
 		{
-			Coroutines.Add(Timing.RunCoroutine(CheckFor939Intercom()));
-			intercomeArea = null;
+			if (SCPSpeech.s939I)
+			{
+				Coroutines.Add(Timing.RunCoroutine(CheckFor939Intercom()));
+				intercomeArea = null;
+			}
 		}
 
         public static List<ReferenceHub> GetHubs()
