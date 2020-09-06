@@ -31,12 +31,27 @@ namespace SCP_Speech
             Instance.UnpatchAll(); 
             this.Info("SCP Speech has been unloaded"); 
         }
-
+        public static bool s049;
+        public static bool enabled;
+        public static bool s0492;
+        public static bool s096;
+        public static bool s106;
+        public static bool s173;
         public override void Register()
         {
             this.AddEventHandlers(new EventHandlers(this));
-
-            this.AddConfig(new Smod2.Config.ConfigSetting("sp_disabled", false, true, "Is plugin enabled?"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_enabled", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_049", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_0492", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_096", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_106", true, true, "no description"));
+            this.AddConfig(new Smod2.Config.ConfigSetting("sp_173", true, true, "no description"));
+            s049 = this.GetConfigBool("sp_049");
+            enabled = this.GetConfigBool("sp_enabled");
+            s0492 = this.GetConfigBool("sp_0492");
+            s096 = this.GetConfigBool("sp_096");
+            s173 = this.GetConfigBool("sp_173");
+            s106 = this.GetConfigBool("sp_106");
         }
     }
 }
