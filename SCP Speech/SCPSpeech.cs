@@ -11,8 +11,8 @@ namespace SCP_Speech
         id = "TeMbI4.SCP.Speech",
         version = "1.2",
         SmodMajor = 3,
-        SmodMinor = 8,
-        SmodRevision = 4
+        SmodMinor = 9,
+        SmodRevision = 0
         )]
     public class SCPSpeech : Plugin
     {
