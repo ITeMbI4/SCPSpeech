@@ -59,7 +59,7 @@ namespace SCP_Speech
 			get
 			{
 				if (intercomeArea == null)
-					intercomeArea = typeof(Intercom).GetField("area", BindingFlags.NonPublic | BindingFlags.Instance)?.GetValue(Intercom.host) as Transform;
+					intercomeArea = typeof(Intercom).GetField("_area", BindingFlags.NonPublic | BindingFlags.Instance)?.GetValue(Intercom.host) as Transform;
 
 				if (intercomeArea == null)
 					throw new MissingFieldException("Field for intercom not found.");
