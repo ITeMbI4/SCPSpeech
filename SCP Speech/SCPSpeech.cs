@@ -12,7 +12,7 @@ namespace SCP_Speech
         version = "1.2",
         SmodMajor = 3,
         SmodMinor = 9,
-        SmodRevision = 0
+        SmodRevision = 9
         )]
     public class SCPSpeech : Plugin
     {
@@ -29,7 +29,7 @@ namespace SCP_Speech
 
         public override void OnEnable() 
         {
-            Instance = new Harmony("TeMbI4");
+            Instance = new Harmony("SCPSP_TeMbI4");
             Instance.PatchAll(); 
             this.Info("SCP Speech has loaded :D"); 
         }
